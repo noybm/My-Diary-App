@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".AddDiaryDetailsActivity">
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/quill"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="#e8a9b6"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="6.5dp"
+                android:src="@drawable/todo" />
+
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/caveat_bold"
+                android:text="Add Todo List"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:orientation="vertical"
+        android:layout_marginVertical="26dp"
+        android:layout_margin="13dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_titles_text"
+            android:hint="List Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/my_primarycolor"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <com.app.mydiary.LinedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_content_text"
+            android:hint="Add Items here"
+            android:minLines="15"
+
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_note_text_view_btn"
+            android:text="Delete"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_marginBottom="13dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/save_note_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"
+            android:backgroundTint="#e8a9b6"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="14.30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

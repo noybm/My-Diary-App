@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".DiaryActivity">
+
+    <ImageView
+        android:layout_width= "130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/quill"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="@color/my_primarycolor" />
+
+    <RelativeLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10.40dp"
+        android:layout_marginTop="10.40dp"
+        android:layout_marginEnd="10.40dp"
+        android:layout_marginBottom="10.40dp">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/caveat_bold"
+            android:text="To-do lists"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menu_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_menu_24"
+            app:tint="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_layout"
+
+        android:layout_marginStart="10.40dp"
+        android:layout_marginTop="19.5dp"
+        android:layout_marginEnd="10.40dp"
+        android:layout_marginBottom="10.40dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/my_primarycolor" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_note_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19.5dp"
+        android:layout_marginTop="19.5dp"
+        android:layout_marginEnd="19.5dp"
+        android:layout_marginBottom="19.5dp"
+        android:backgroundTint="@color/my_primarycolor"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="#fff" />
+
+
+</RelativeLayout>

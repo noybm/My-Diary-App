@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".HomeScreenActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/quill"
+
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="#e8a9b6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/beth_ellen"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="52dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="3dp"
+            android:id="@+id/cardDiary"
+            app:contentPadding="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:cardUseCompatPadding="true"
+
+            android:background="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="65dp"
+                    android:layout_margin="2.60dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:id="@+id/imBg"
+                            app:riv_oval="true"
+                            android:src="#F8D7D7"
+                            />
+
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/itemimage"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_centerInParent="true"
+                            android:padding="2.60dp"
+                            android:src="@drawable/diary"
+                            app:riv_corner_radius="6.5dp" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caveat_bold"
+                        android:text="My Diary"
+                        android:textColor="@color/textColor"
+                        android:textSize="29.90dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/viewitembarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+
+                android:layout_marginLeft="50dp"
+                android:layout_toEndOf="@+id/viewitembarcodename"
+                android:text="TextView" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="3dp"
+            android:id="@+id/cardTodo"
+            app:contentPadding="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:cardUseCompatPadding="true"
+            android:background="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="65dp"
+                    android:layout_margin="2.60dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:id="@+id/imBg"
+                            app:riv_oval="true"
+                            android:src="#F8D7D7"
+                            />
+
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/itemimage"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_centerInParent="true"
+                            android:padding="2.60dp"
+                            android:src="@drawable/todo"
+                            app:riv_corner_radius="6.5dp"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caveat_bold"
+                        android:text="To Do List"
+                        android:textColor="@color/textColor"
+
+                        android:textSize="29.90dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="3dp"
+            android:id="@+id/cardMotivation"
+            app:contentPadding="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:cardUseCompatPadding="true"
+            android:background="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="65dp"
+                    android:layout_margin="2.60dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:id="@+id/imBg"
+                            app:riv_oval="true"
+                            android:src="#F8D7D7"
+                            />
+
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/itemimage"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_centerInParent="true"
+                            android:padding="2.60dp"
+                            android:src="@drawable/moti"
+                            app:riv_corner_radius="6.50dp" />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caveat_bold"
+                        android:text="Daily Motivation"
+                        android:textColor="@color/textColor"
+                        android:textSize="29.90dp"
+
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#fff"
+        android:textSize="19.5dp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="13dp"
+        android:id="@+id/logout"/>
+
+
+</RelativeLayout>

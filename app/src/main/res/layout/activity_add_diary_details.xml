@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".AddDiaryDetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="@color/my_primarycolor"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/quill" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="6.5dp"
+                android:src="@drawable/diary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/page_title"
+                android:text="Add Diary"
+                android:fontFamily="@font/caveat_bold"
+                android:textSize="40sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:orientation="vertical"
+        android:layout_marginVertical="26dp"
+        android:backgroundTint="@color/white"
+        android:layout_margin="13dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_titles_text"
+            android:hint="Title"
+            android:background="@drawable/rounded_corner"
+
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_content_text"
+            android:hint="dear diary..."
+            android:minLines="15"
+            android:gravity="top"
+            android:background="@drawable/rounded_corner"
+
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_margin="10.4dp"
+        android:id="@+id/delete_note_text_view_btn"
+        android:text="Delete"
+
+        android:padding="6.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/bin"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:tint="#fff"
+        android:visibility="gone"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/save_note_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6.5dp"
+
+        android:layout_marginEnd="6.5dp"
+        android:layout_marginBottom="13dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="14.30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

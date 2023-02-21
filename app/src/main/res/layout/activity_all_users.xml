@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="@color/my_primarycolor"/>
+    <RelativeLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10.40dp"
+        android:layout_marginTop="10.40dp"
+        android:layout_marginEnd="10.40dp"
+        android:layout_marginBottom="10.40dp">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/caveat_bold"
+            android:text="Share with"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="91dp"
+        android:layout_marginStart="6.5dp"
+        android:layout_marginEnd="6.5dp"
+        android:id="@+id/RecycleList"/>
+</RelativeLayout>
